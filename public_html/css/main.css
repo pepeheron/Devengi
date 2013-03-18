@@ -1,0 +1,462 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#LogoDiv{
+    margin-top: 5px;
+    margin-left: -50px;
+    height: 14px;
+}
+img {
+    float: left;    
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.header-container {
+    border-bottom: 20px solid #2162A3;    
+    position: relative;
+        z-index: 1;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #2162A3;
+}
+
+.header-container,
+.footer-container,
+.body,
+.wrapper{
+    background: #0b4075;
+    background-image:url('fondo.png');    
+}
+
+.title {
+    color: white;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+h1, h2, h3, p{
+    color: #fff;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+/*==================================
+
+        menu style
+        
+====================================*/
+
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    outline: none;
+   position: relative;
+}
+.menu{
+    
+}
+.menu li {
+    position: relative;
+    float: left;
+    display: block;
+    margin-bottom: -10px;
+    width: 147px;
+    
+}
+
+.menu #inicio:first-child a {        
+    margin-left: 0;
+    border-radius: 1em 0 0 0;
+
+}
+.menu #contacto:last-child a {
+    margin-right: 0;
+    border-radius: 0 .5em 0 0 ;        
+}  
+
+.menu li a {
+    color: white;
+    background: #2162A3;
+    font-weight: bold;
+    display: block;
+    padding: .5em 1em;    
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;    
+    width: 140px;
+}
+
+.menu ul{
+    /*display: none;*/
+    opacity: 0;
+    /*margin: 0;
+    padding-top: 0;*/
+    position: absolute;
+    top: 25px;
+    /*width: content-box;    */
+
+
+    -webkit-transition: opacity .5s ease .1s;
+    -moz-transition: opacity .5s ease .1s;
+    -o-transition: opacity .5s ease .1s;
+    -ms-transition: opacity .5s ease .1s;
+    transition: opacity .5s ease .1s;
+}
+
+.menu ul li {
+    height: 0;
+    overflow: visible;
+    padding: 0;   
+    margin-bottom: 5px;
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+
+#submenu li:last-child a, #submenu2 li:last-child a, #submenu3 li:last-child a{    
+    border-radius: 0 0 1em 1em ;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+
+/*===================================================================
+        submenus Class
+===================================================================*/
+
+
+/*/////.submenu/////*/
+
+#submenu li #submenu2 li #submenu3 li {  
+    width: 150px;
+    
+}
+
+#submenu li a, #submenu2 li a{
+    font-size: 14px;
+    overflow: visible;
+    text-align: center;   
+    width: 186px;
+    
+}
+#submenu3 li {
+    font-size: 14px;
+    overflow: visible;
+    text-align: center;       
+    width:170px;
+}
+
+
+/*================================================================
+            hover
+================================================================*/
+
+.menu li:hover > a {
+    color: #AEEAFC;
+}
+
+.menu li:hover > ul{ 
+    opacity: 1;
+    
+}
+
+.menu li:hover > ul li {
+    height: 35px; 
+}
+.menu li :hover > ul li a {
+    font-size: 14px;
+}
+
+.menu li:hover > ul li a{
+    /*background: #5497d9;*/
+    ;}
+/* ==========================================================================
+                Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 480px) {
+
+
+
+
+    /* ====================
+        INTERMEDIATE: Menu
+       ==================== */
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* ====================
+        WIDE: CSS3 Effects
+       ==================== */
+
+    .header-container,
+    .main aside {
+        /*-webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #4b80b5 ;*/
+    }
+
+    /* ============
+        WIDE: Menu
+       ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        margin-top: 38px;
+    }
+
+    /* ============
+        WIDE: Main
+       ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+    /* ===============
+        Maximal Width
+       =============== */
+
+    .wrapper {
+        /*background-color: #ff0000;*/
+        width: 1026px; /* 1140px - 10% for margins */        
+        margin: 0 auto;
+        
+    }
+}
+
+
+
+
+/* ==========================================================================
+
+
+
+   Helper classes
+
+
+
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    /*border: 0;*/
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    /*clip: rect(0 0 0 0);*/
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+/*
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; 
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}*/

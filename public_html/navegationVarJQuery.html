@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--// Sección principal o cabecera de la página -->
+	<head>
+		<meta charset="utf-8">
+		<title>Crear menú de navegación utilizando HTML5, CSS3 y jQuery</title>
+        <!--// Incluir el archivo CSS3 principal -->
+		<link rel="stylesheet" href="css/nav.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <!--// Si se utiliza ie7, se cargan estos archivos css -->        
+        <!--[if IE 7]>
+        		<link rel="stylesheet" href="css/ie.css">
+            	<link rel="stylesheet" href="css/ie7.css">
+        <![endif]-->
+	</head>
+	<body class="no-js">
+    	<script>
+			var el = document.getElementsByTagName("body")[0];
+			el.className = "";
+		</script>
+        <noscript>
+        	<!--[if IE]>
+            	<link rel="stylesheet" href="css/ie.css">
+            <![endif]-->
+        </noscript>
+        <!--// Comienzo de la estructura del menú -->
+		<nav id="topNav">
+        	<ul>
+            	<li><a href="#" title="Ir a la página de inicio">Inicio</a></li>
+   		  <li><a href="#" title="Ver las categorías y secciones del sitio web">Categorías</a>
+                	<ul>
+                    	<li><a href="#" title="Sub menú 1">ir al Sub menú 1</a></li>
+                        <li><a href="#" title="Sub menú 2">Sub menú 2</a></li>
+                        <li><a href="#" title="Sub menú 3">Sub menú 3</a></li>
+                        <li><a href="#" title="Sub menú 4">Sub menú 4</a></li>
+                        <li class="last"><a href="#" title="Sub menú 5">Sub menú 5</a></li>
+                    </ul>        
+                </li>
+              <li><a href="#" title="Clic aquí para buscar">Buscar</a></li>
+              <li><a href="#" title="Ir a la página web de contacto">Contacto</a></li>
+              <li class="last"><a href="#" title="Ir a la página web de novedades">Novedades</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+        Aquí el resto del contenido de la página web.
+        </div>
+        <!--// Inclusión de los archivos Javascript -->
+		<script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+		<script>
+			(function($){
+				var nav = $("#topNav");
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>

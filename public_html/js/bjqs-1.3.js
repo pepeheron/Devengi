@@ -23,14 +23,14 @@
         var defaults        = {
 
             // w + h to enforce consistency
-            width           : 700,
-            height          : 300,
+            width           : 1000,
+            height          : 500,
 
             // transition valuess
             animtype        : 'fade',
             animduration    : 1000,      // length of transition
-            animspeed       : 1000,     // delay between transitions
-            automatic       : false,     // enable/disable automatic slide rotation
+            animspeed       : 4000,     // delay between transitions
+            automatic       : true,     // enable/disable automatic slide rotation
 
             // control and marker configuration
             showcontrols    : false,     // enable/disable next + previous UI elements
